@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FritzContact - Imports contacts from AVM-Fritz!Box-XML files 
+   - Copyright (C) 2011 Dominik Köppl
+   - 
+   - This program is free software: you can redistribute it and/or modify
+   - it under the terms of the GNU General Public License as published by
+   - the Free Software Foundation, either version 3 of the License, or
+   - (at your option) any later version.
+   - 
+   - This program is distributed in the hope that it will be useful,
+   - but WITHOUT ANY WARRANTY; without even the implied warranty of
+   - MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   - GNU General Public License for more details.
+   -
+   - You should have received a copy of the GNU General Public License
+   - along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+<resources>
+	<string name="about_copyright">Copyright © 2011 Dominik Köppl</string>
+	<string name="about_website_label">FritzContact at berliOS</string>
+	<string name="about_website_url">http://berlios.fritzcontact.org</string>
+	<string name="about_email">niki@users.berlios.de</string>
+	<string name="app_name">FritzContact</string>
+
+
+
+	<string name="type_work">work</string>
+	<string name="type_home">home</string>
+	<string name="type_main">main</string>
+	<string name="type_mobile">mobile</string>
+
+	<string name="select_all">Select All</string>
+	<string name="select_clear">Clear Selection</string>
+
+	<string name="about">About</string>
+	<string name="about_comments">Import contacts from Fritz!Box\'s xml format.</string>
+	<string name="process_finished">%1$d contacts inserted\n%2$d contacts omitted.</string>
+	<string name="button_parse">Parse file</string>
+	<string name="button_apply">Insert selected contacts</string>
+	<string name="processing">Processing...</string>
+	<string name="process_error">Could not process contacts - an error occured: \"%1$s\"</string>
+	<string name="xml_error">Could not open xml-file \'%1$s\'. The error message is: \"%2$s\"</string>
+	<string name="ok">OK</string>
+	<string name="button_openfile">Choose file</string>
+	<string name="filedialog_openxml">Open Fritz!Box-XML-File</string>
+	<string name="filedialog_error">Please install OpenIntents\' OI File Manager for enabling this feature.</string>
+	<string name="filedialog_button">Open</string>
+</resources>

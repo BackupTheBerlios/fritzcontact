@@ -1,0 +1,10 @@
+Willkommen bei FritzContact!
+
+Sie können mit diesem Programm Kontakte zu Ihrer Kontaktliste hinzufügen, die in einer xml-Datei durch die Fritz!Box exportiert worden sind.
+Den Dateipfad der auf der SD-Karte gespeicherten Datei geben Sie bitte in dem oberen Eingabefeld ein.
+Falls Sie die Datei bereits als "fritz.xml" im Wurzelverzeichnis Ihrere SD-Karte abgespeichert haben, müssen Sie den Pfad nicht mehr ändern.
+Nachdem die Datei gelesen wurde, erscheint einer Liste aller Kontakte, die in der xml-Datei enthalten sind 
+(Hierbei werden die Fritz!Box-internen Rufnummern außer Acht gelassen).
+Sie können anschließend diejenigen Kontakte aus der Liste auswählen, die Sie importieren möchten.
+Der Menü-Knopf Ihres Handys gibt Ihnen die Möglichkeit, alle Einträge der Liste zu selektieren/deselektieren.
+Die Kontakte werden lokal auf Ihren Handy abgespeichert.

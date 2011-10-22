@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FritzContact - Imports contacts from AVM-Fritz!Box-XML files 
+   - Copyright (C) 2011 Dominik Köppl
+   - 
+   - This program is free software: you can redistribute it and/or modify
+   - it under the terms of the GNU General Public License as published by
+   - the Free Software Foundation, either version 3 of the License, or
+   - (at your option) any later version.
+   - 
+   - This program is distributed in the hope that it will be useful,
+   - but WITHOUT ANY WARRANTY; without even the implied warranty of
+   - MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   - GNU General Public License for more details.
+   -
+   - You should have received a copy of the GNU General Public License
+   - along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+<resources>
+
+	<string name="type_work">Arbeit</string>
+	<string name="type_home">Daheim</string>
+	<string name="type_main">Gewöhnlich</string>
+	<string name="type_mobile">Handy</string>
+
+	<string name="select_all">Wähle Alles</string>
+	<string name="select_clear">Wähle nichts</string>
+
+	<string name="about">Über</string>
+	<string name="about_comments">Importiert Kontakte aus der Fritz!Box-Xml-Datei.</string>
+	<string name="process_finished" formatted="false">%d Kontakate hinzugefügt\n%d Kontakte weggelassen.</string>
+	<string name="button_parse">Lese Datei</string>
+	<string name="button_apply">Übernehme die angewählten Kontakte</string>
+	<string name="processing">Bearbeite...</string>
+	<string name="process_error">Konnte die Kontakte nicht bearbeiten - ein Fehler ist aufgetaucht: \"%1$s\"</string>
+	<string name="xml_error">Konnte die XML-Datei \'%1$s\' nicht lesen. Die Fehlermeldung lautet: \"%2$s\"</string>
+	<string name="ok">OK</string>
+	<string name="button_openfile">Wähle Datei</string>
+	<string name="filedialog_openxml">Öffne Fritz!Box-XML-Datei</string>
+	<string name="filedialog_error">Installieren Sie bitte den OI File Manager von OpenIntents um eine Datei auswählen zu können.</string>
+	<string name="filedialog_button">Öffnen</string>
+
+</resources>

@@ -1,0 +1,8 @@
+Welcome to FritzContact!
+
+You have to specify the location of your xml-file, which was exported by your Fritz!Box.
+Therefore you can enter in the TextView above the absolute file path. 
+If you have saved your file as "fritz.xml" on the root directory of your SD-card, you do not need to change the path.
+After parsing the file, I will show you all available contacts that are contained in your xml-file (I am silently omitting the Fritz!Box-internal phone numbers).
+You can then select the desired contacts to import. Pressing menu gives the ability to select/deselect all entries.
+Contacts will be saved locally on your mobile phone. 
