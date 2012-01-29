@@ -156,7 +156,9 @@ public class ProcessActivity extends Activity {
 				@Override
 			    protected void onPostExecute(Integer result) {
 					progressDialog.dismiss();
-					String str = getResources().getString(R.string.process_finished, applied, all - applied);
+					String str = getResources().getQuantityString(R.plurals.process_finished_inserted, applied, applied) + 
+					"\n" + 
+					getResources().getQuantityString(R.plurals.process_finished_omitted, all - applied, all - applied);
 					Toast toast = Toast.makeText(ProcessActivity.this, str, Toast.LENGTH_LONG);
 					toast.show();
 			    }

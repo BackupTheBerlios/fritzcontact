@@ -17,6 +17,17 @@
   -->
 <resources>
 
+    <plurals name="process_finished_inserted">
+        <item quantity="one">Einen Kontakt hinzugefügt.</item>
+        <item quantity="other">%1$d Kontakte hinzugefügt.</item>
+    </plurals>
+    
+    <plurals name="process_finished_omitted">
+        <item quantity="one">Einen Kontakt ausgelassen</item>
+        <item quantity="other">%1$d Kontakte ausgelassen.</item>
+    </plurals>
+	    
+    
 	<string name="type_work">Arbeit</string>
 	<string name="type_home">Daheim</string>
 	<string name="type_main">Gewöhnlich</string>
@@ -27,7 +38,6 @@
 
 	<string name="about">Über</string>
 	<string name="about_comments">Importiert Kontakte aus der Fritz!Box-Xml-Datei.</string>
-	<string name="process_finished" formatted="false">%d Kontakate hinzugefügt\n%d Kontakte weggelassen.</string>
 	<string name="button_parse">Lese Datei</string>
 	<string name="button_apply">Übernehme die angewählten Kontakte</string>
 	<string name="processing">Bearbeite...</string>

@@ -90,9 +90,9 @@ public class InitialActivity extends Activity {
 	                bundle.putParcelableArrayList("list", list);
 					intent.putExtras(bundle);
 					InitialActivity.this.startActivity(intent);
-				} catch (Throwable e) {
+				} catch (Exception e) {
 		    		AlertDialog.Builder builder = new AlertDialog.Builder(InitialActivity.this);
-		    		builder.setMessage(getResources().getString(R.string.xml_error, filename, e.toString()))
+		    		builder.setMessage(getResources().getString(R.string.xml_error, filename, e.toString() + ", " + e.getStackTrace().toString() ))
 		    		       .setPositiveButton(getResources().getString(R.string.ok), new DialogInterface.OnClickListener() {
 		    		           public void onClick(DialogInterface dialog, int id) {
 		    		                dialog.dismiss();
@@ -162,7 +162,11 @@ public class InitialActivity extends Activity {
 			Node contactNode = contacts.item(i);
 			if(contactNode.getNodeType() != Node.ELEMENT_NODE) continue;
 			Element contact = (Element) contactNode;
-			String realName = contact.getElementsByTagName("realName").item(0).getChildNodes().item(0).getNodeValue();
+			NodeList realNameList = contact.getElementsByTagName("realName");
+			if(realNameList.getLength() == 0) continue;
+			NodeList realNameListChildNodes = realNameList.item(0).getChildNodes();
+			if(realNameListChildNodes.getLength() == 0) continue;
+			String realName = realNameListChildNodes.item(0).getNodeValue();
 			if(realName.contains("~AVM-")) continue;
 			
 			NodeList numbers = contact.getElementsByTagName("number");
@@ -172,7 +176,9 @@ public class InitialActivity extends Activity {
 				if(numberNode.getNodeType() != Node.ELEMENT_NODE) continue;
 				Element number = (Element) numberNode;
 				String type = number.getAttribute("type");
-				String snumber = number.getChildNodes().item(0).getNodeValue();
+				NodeList numberList = number.getChildNodes();
+				if(numberList.getLength() == 0) continue;
+				String snumber = numberList.item(0).getNodeValue();
 				phonenumbers.add(new PhoneNumber(phonenumbers.size(), realName, type, snumber));
 			}
 		}

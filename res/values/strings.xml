@@ -34,7 +34,18 @@
 
 	<string name="about">About</string>
 	<string name="about_comments">Import contacts from Fritz!Box\'s xml format.</string>
-	<string name="process_finished">%1$d contacts inserted\n%2$d contacts omitted.</string>
+	
+    <plurals name="process_finished_inserted">
+        <item quantity="one">One contact inserted.</item>
+        <item quantity="other">%1$d contacts inserted.</item>
+    </plurals>
+    
+    <plurals name="process_finished_omitted">
+        <item quantity="one">One contact omitted.</item>
+        <item quantity="other">%1$d contacts omitted.</item>
+    </plurals>
+	    
+	    
 	<string name="button_parse">Parse file</string>
 	<string name="button_apply">Insert selected contacts</string>
 	<string name="processing">Processing...</string>
